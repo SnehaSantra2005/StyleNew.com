@@ -1,0 +1,159 @@
+/* Main wrapper */
+.shopcategory1 {
+    padding: 20px;
+    background-color: #fafafa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Search bar */
+.shopcategory1-search {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.shopcategory1-search input {
+    width: 60%;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease-in-out;
+}
+
+.shopcategory1-search input:focus {
+    outline: none;
+    border-color: #ff3e6c;
+    box-shadow: 0 0 0 3px rgba(255, 62, 108, 0.2);
+}
+
+/* Layout: filter + product grid */
+.shopcategory1-layout {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Filter section */
+.shopcategory1-filters {
+    width: 250px;
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 20px;
+    flex-shrink: 0;
+    height: 310px;
+}
+
+.shopcategory1-sort,
+.shopcategory1-filter {
+    margin-bottom: 20px;
+}
+
+.shopcategory1-sort label,
+.shopcategory1-filter label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+.shopcategory1-sort select,
+.shopcategory1-filter select {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Product grid */
+.shopcategory1-products {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 24px;
+    margin-left: 70px;
+}
+
+.shopcategory1-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Individual product card styles */
+.product-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+/* No product fallback */
+.no-products1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    padding: 40px;
+}
+
+/* Load More button */
+.shopcategory1-loadmore {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.shopcategory1-loadmore .explore-link {
+    padding: 12px 24px;
+    background-color: #ff3e6c;
+    color: white;
+    font-weight: 500;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.shopcategory1-loadmore .explore-link:hover {
+    background-color: #e6325c;
+}
+
+@media screen and (max-width: 768px) {
+    .shopcategory1-search input {
+        width: 80%;
+    }
+
+    .shopcategory1-filters {
+        width: 150px;
+        background: white;
+        padding: 20px;
+        border-radius: 16px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+        position: sticky;
+        top: 20px;
+        flex-shrink: 0;
+        height: 300px;
+    }
+
+    .shopcategory1-products {
+        margin-top: -360px;
+        margin-left: 200px;
+    }
+
+    .shopcategory1-loadmore {
+        grid-column: 1 / -1;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 180px;
+    }
+
+
+}

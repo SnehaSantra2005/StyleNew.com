@@ -1,0 +1,159 @@
+.journey-section {
+  padding: 60px 20px;
+  background: #fffafc;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.journey-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.journey-heading h1 {
+  font-size: 42px;
+  color: #d63384;
+}
+
+.journey-heading p {
+  font-size: 18px;
+  color: #444;
+  margin-top: 10px;
+}
+
+/* Timeline structure */
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  position: relative;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.timeline-block {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+}
+
+.timeline-block.left {
+  flex-direction: row;
+}
+
+.timeline-block.right {
+  flex-direction: row-reverse;
+}
+
+.timeline-block img {
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content {
+  flex: 1;
+}
+
+.timeline-content h2 {
+  color: #d63384;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Socials */
+.connect {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.connect h3 {
+  color: #d63384;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons img {
+  width: 36px;
+  height: 36px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline-block {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .timeline-block img {
+    width: 90%;
+  }
+}
+
+
+.founder-section {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.founder-section h2 {
+  font-size: 32px;
+  color: #d63384;
+  margin-bottom: 30px;
+}
+
+.founder-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.founder-image {
+  width: 220px;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.founder-bio {
+  max-width: 500px;
+  text-align: left;
+}
+
+.founder-bio h3 {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.founder-bio p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .founder-bio {
+    text-align: center;
+  }
+}
+
