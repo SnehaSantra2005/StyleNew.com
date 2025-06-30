@@ -1,0 +1,63 @@
+.newsletter {
+  background: pink url('./girl-bg.jpg') no-repeat center center/cover;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  transition: transform 0.3s ease;
+  width: 80%;
+  margin: 40px auto;
+}
+
+.newsletter h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.newsletter input {
+  padding: 0.8rem;
+  width: 250px;
+  max-width: 80%;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+}
+
+.newsletter button {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  background-color: #ff007f;
+  color: white;
+  font-weight: bold;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+
+.newsletter:hover .offer-tooltip {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Tooltip / Offer Popup */
+.offer-tooltip {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #fff;
+  color: #ff007f;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}

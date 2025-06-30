@@ -1,0 +1,269 @@
+.offers-content {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px;
+
+}
+
+.offers-heading {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 800;
+    color: #d63384;
+    /* Glam pink */
+    margin-bottom: 40px;
+    font-family: 'Segoe UI', sans-serif;
+    animation: fadeInDown 0.8s ease-out;
+    position: relative;
+}
+
+/* Optional underline effect */
+.offers-heading::after {
+    content: '';
+    width: 100px;
+    height: 4px;
+    background: #d63384;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Base box style */
+.offer-box {
+    width: 250px;
+    height: 280px;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.offer-box:hover,
+.small-box:hover,
+.grid-small-box:hover {
+    transform: translateY(-8px);
+    transition: transform 0.3s ease;
+}
+
+/* First box with two vertical boxes */
+.double-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: transparent;
+    box-shadow: none;
+    height: 280px;
+    padding: 0;
+}
+
+.small-box {
+    flex: 1;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.small-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Third box with grid (2x2) */
+.grid-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+    background: transparent;
+    box-shadow: none;
+    height: 280px;
+}
+
+.grid-small-box {
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.grid-small-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Regular image */
+.offer-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+.with-text {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+.with-text img {
+    width: 55%;
+    height: 80%;
+    border-radius: 12px;
+    object-fit: cover;
+
+}
+
+.box-text {
+    flex: 1;
+    font-family: sans-serif;
+}
+
+.box-text h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 5px;
+    color: #171717;
+}
+
+
+
+
+
+
+
+
+/* Entrance animation keyframes */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Animation classes for different boxes */
+.animate-left {
+    animation: fadeInLeft 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.animate-right {
+    animation: fadeInRight 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.animate-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .offers-content {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .offers-heading {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .offer-box {
+        width: 200px;
+        height: 240px;
+    }
+
+    .double-box {
+        height: auto;
+    }
+
+    .small-box {
+        height: 120px;
+        height: 120px;
+    }
+
+    .grid-box {
+        display: none;
+    }
+
+    .grid-small-box {
+        height: 120px;
+    }
+    
+
+.box-text {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  padding-left: 10px;
+}
+
+.box-text h3 {
+  font-size: 10px;
+  font-weight: 600;
+  margin: 0;
+  color: #171717;
+  line-height: 1.4;
+}
+    
+}

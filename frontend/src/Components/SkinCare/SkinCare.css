@@ -1,0 +1,52 @@
+.skinCare {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.skinCare h1 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 800;
+    color: #d63384;
+    /* Glam pink */
+    margin-bottom: 0px;
+    font-family: 'Segoe UI', sans-serif;
+    animation: fadeInDown 0.8s ease-out;
+    position: relative;
+}
+
+.skinCare hr {
+    width: 150px;
+    height: 4px;
+    border-radius: 10px;
+    background: #d63384;
+}
+
+.skinCare-item {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+/* ---------- media query------------ */
+
+@media(max-width: 800px) {
+    .skinCare h1 {
+        font-size: 30px;
+    }
+
+    .skinCare hr {
+        width: 80px;
+        height: 4px;
+
+    }
+}

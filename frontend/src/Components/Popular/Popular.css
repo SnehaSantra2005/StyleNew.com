@@ -1,0 +1,96 @@
+.popular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.popular h1 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #d63384;
+  font-family: 'Segoe UI', sans-serif;
+  animation: fadeInDown 0.8s ease-out;
+  text-align: center;
+}
+
+.popular hr {
+  width: 100px;
+  height: 4px;
+  background: #d63384;
+  border: none;
+  border-radius: 2px;
+  margin: 5px auto 0;
+}
+
+/* Container for scrollable items */
+.popular-items1 {
+  width: 100%;
+  margin: 50px 0 100px;
+  background-color: #f9d4e9;
+  border-radius: 35px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popular-item {
+  display: flex;
+  gap: 65px;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scroll-behavior: smooth;
+}
+
+.popular-item::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+/* Responsive Scroll on Mobile */
+@media (max-width: 768px) {
+  .popular h1 {
+    font-size: 30px;
+  }
+
+  .popular hr {
+    width: 80px;
+  }
+
+  .popular-item {
+    flex-wrap: nowrap;
+    gap: 30px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .popular-item > * {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+  }
+
+  .popular-items1 {
+    padding: 15px;
+    border-radius: 25px;
+    background: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .popular h1 {
+    font-size: 24px;
+  }
+
+  .popular hr {
+    width: 60px;
+  }
+
+  .popular-item {
+    gap: 20px;
+  }
+}
